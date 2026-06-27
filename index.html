@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="nl" class="home-shell">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Atelier Ruw home">
       <span class="brand-mark">AR</span>
@@ -27,11 +28,21 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero snap-section">
       <div class="hero-art" aria-label="Handgemaakte sculpturen van hout">
+        <div class="hero-slides" aria-hidden="true">
+          <div class="hero-slide panel-one is-active"></div>
+          <div class="hero-slide panel-two"></div>
+          <div class="hero-slide panel-three"></div>
+        </div>
         <div class="grain"></div>
-        <div class="hero-index">01 — 03</div>
-        <div class="scroll-note">SCROLL OM TE ONTDEKKEN <span>↓</span></div>
+        <div class="hero-index" aria-live="polite">01 — 03</div>
+        <div class="hero-dots" aria-label="Hero-afbeeldingen">
+          <button class="is-active" type="button" data-slide="0" aria-label="Toon sculptuur"></button>
+          <button type="button" data-slide="1" aria-label="Toon houten bank"></button>
+          <button type="button" data-slide="2" aria-label="Toon wandobject"></button>
+        </div>
+        <a class="scroll-note" href="#werk">SCROLL OM TE ONTDEKKEN <span>↓</span></a>
       </div>
       <div class="hero-copy">
         <p class="eyebrow">KUNSTENAAR · HOUTBEWERKER</p>
@@ -41,7 +52,7 @@
       </div>
     </section>
 
-    <section class="work-section" id="werk">
+    <section class="work-section snap-section" id="werk">
       <div class="section-head">
         <div>
           <p class="eyebrow">SELECTIE</p>
@@ -76,9 +87,10 @@
           </div>
         </article>
       </div>
+      <div class="gallery-status" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
     </section>
 
-    <section class="maker" id="maker">
+    <section class="maker snap-section" id="maker">
       <div class="maker-photo">
         <img src="assets/maker.jpg" alt="De maker achter Atelier Ruw">
         <span class="photo-label">DE MAKER</span>
@@ -91,11 +103,11 @@
       </div>
     </section>
 
-    <section class="quote">
+    <section class="quote snap-section">
       <p>“Je haalt het beeld niet uit het hout.<br>Je geeft het ruimte om te verschijnen.”</p>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact snap-section" id="contact">
       <p class="eyebrow">EEN IDEE OF EEN BIJZONDER STUK HOUT?</p>
       <h2>Laten we iets<br><em>maken.</em></h2>
       <a class="contact-button" href="contact.html">
