@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e261e">
+  <title>Atelier Ruw — Kunst uit hout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Atelier Ruw home">
+      <span class="brand-mark">AR</span>
+      <span>ATELIER RUW</span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#werk">Werk</a>
+      <a href="#maker">De maker</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-art" aria-label="Handgemaakte sculpturen van hout">
+        <div class="grain"></div>
+        <div class="hero-index">01 — 03</div>
+        <div class="scroll-note">SCROLL OM TE ONTDEKKEN <span>↓</span></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">KUNSTENAAR · HOUTBEWERKER</p>
+        <h1>Hout met een<br><em>tweede leven.</em></h1>
+        <p class="intro">Unieke objecten, sculpturen en meubels. Met de hand gevormd uit gevonden en lokaal hout.</p>
+        <a class="text-link" href="#werk">BEKIJK HET WERK <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="work-section" id="werk">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SELECTIE</p>
+          <h2>Recent werk</h2>
+        </div>
+        <div class="gallery-controls">
+          <button type="button" data-dir="-1" aria-label="Vorige werk">←</button>
+          <button type="button" data-dir="1" aria-label="Volgende werk">→</button>
+        </div>
+      </div>
+
+      <div class="gallery" tabindex="0">
+        <article class="work-card">
+          <div class="work-image panel-one"><span>01</span></div>
+          <div class="work-meta">
+            <h3>De Wenteling</h3>
+            <p>EIKENHOUT · 2026</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image panel-two"><span>02</span></div>
+          <div class="work-meta">
+            <h3>Zitting No. 4</h3>
+            <p>ESSENHOUT · 2026</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image panel-three"><span>03</span></div>
+          <div class="work-meta">
+            <h3>Reststukken</h3>
+            <p>GERECYCLED HOUT · 2025</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="maker" id="maker">
+      <div class="maker-photo">
+        <img src="assets/maker.jpg" alt="De maker achter Atelier Ruw">
+        <span class="photo-label">DE MAKER</span>
+      </div>
+      <div class="maker-copy">
+        <p class="eyebrow">OVER HET ATELIER</p>
+        <h2>Geen stuk hout is hetzelfde.</h2>
+        <p>Ik volg de lijnen, nerven en sporen die al in het materiaal zitten. Zo ontstaat werk dat niet perfect hoeft te zijn, maar wel echt.</p>
+        <a class="text-link light" href="#contact">LEES MIJN VERHAAL <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="quote">
+      <p>“Je haalt het beeld niet uit het hout.<br>Je geeft het ruimte om te verschijnen.”</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">EEN IDEE OF EEN BIJZONDER STUK HOUT?</p>
+      <h2>Laten we iets<br><em>maken.</em></h2>
+      <a class="contact-button" href="mailto:hallo@atelierruw.nl">
+        <span>VERTEL JE IDEE</span>
+        <span>↗</span>
+      </a>
+      <div class="footer-row">
+        <span>ATELIER RUW © 2026</span>
+        <span>INSTAGRAM ↗</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
